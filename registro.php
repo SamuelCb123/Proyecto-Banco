@@ -17,5 +17,16 @@
         <a href="iniciarsesion.php" class="button">Iniciar sesrión</a>
     </nav>
 </header>
+<div class="formulario">
+    <form method="post" action="">
+        <p>registros</p>
+        <div class="input-wrapper">
+            <input type="text" name="nombre" placeholder="Nombre">
+            <img class="input-icon" src="persona.png" alt=""width="30px">
+        </div>
+        <div class="input-wrapper">
+            <input type="text" name="apellidos" placeholder="apellidos">
+            <img class="input-icon" src="persona.png" alt=""width="30px">
+        </div>
 </body>
 </html>
