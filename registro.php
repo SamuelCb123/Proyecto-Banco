@@ -28,5 +28,9 @@
             <input type="text" name="apellidos" placeholder="apellidos">
             <img class="input-icon" src="persona.png" alt=""width="30px">
         </div>
+        <div class="input-wrapper">
+            <input type="text" name="DNI" placeholder="DNI">
+            <img class="input-icon" src="persona.png" alt=""width="30px">
+        </div>
 </body>
 </html>
