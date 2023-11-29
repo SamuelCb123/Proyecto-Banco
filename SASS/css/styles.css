@@ -90,6 +90,10 @@ input {
           transform: translateY(-50%);
 }
 
+.btn {
+  background-color: #FFBE58;
+}
+
 @media screen and (max-width: 600px) {
   form {
     width: 100%;
