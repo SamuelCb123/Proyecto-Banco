@@ -1,5 +1,5 @@
 header {
-  background-color: black;
+  background-color: red;
   height: 80px;
 }
 
@@ -14,6 +14,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   color: #FFBE58;
+  text-align: center;
 }
 
 .button {
