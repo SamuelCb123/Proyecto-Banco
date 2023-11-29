@@ -13,7 +13,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #FFBE58;
 }
 
 .button {
@@ -27,9 +26,4 @@ header {
   text-decoration: none;
   line-height: 46px;
   text-indent: 30px;
-}
-
-body {
-  margin: 0;
-  padding: 0;
 }
