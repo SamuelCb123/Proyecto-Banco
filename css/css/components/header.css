@@ -14,6 +14,10 @@ header {
       -ms-flex-align: center;
           align-items: center;
   color: #FFBE58;
+<<<<<<< HEAD
+=======
+  text-align: center;
+>>>>>>> css
 }
 
 .button {
