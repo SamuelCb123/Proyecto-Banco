@@ -6,7 +6,7 @@ $consulta = "SELECT `nombre`, `email` FROM `usuarios` WHERE `nombre` = '$nombre'
 $resultado = mysqli_query($conexion, $consulta);
 
 if ($resultado) {
-echo "hs iniciado sesion correctamente";
+echo "has iniciado sesion correctamente";
 }
 else {
     echo "Error en la consulta: " . mysqli_error($conexion);
