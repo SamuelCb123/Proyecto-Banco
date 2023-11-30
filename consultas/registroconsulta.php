@@ -12,7 +12,8 @@ $consulta = "INSERT INTO usuarios (nombre, apellidos, DNI, email, Pais) VALUES (
 $resultado = mysqli_query($conexion, $consulta);
 
 if ($resultado) {
-   echo "kimi wa subarashi hito da";
+    header("location: ../iniciarsesion.php");
+    
 } else {
     echo "Error en la consulta: " . mysqli_error($conexion);
 }
