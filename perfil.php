@@ -30,7 +30,7 @@ session_start();
     <div class="modal-content">
         <span class="cerrar">&times;</span>
         <h2>Ventana modal</h2>
-        <p>Esto es el texto de la ventana</p>
+        <p>Esto es el texto de la vweentana</p>
     </div>
   </div>
             
