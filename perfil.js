@@ -1,8 +1,5 @@
-"use strict";
-"use strict";
-
-// Obtener el nombre de usuario desde PHP
-let nombreUsuario = "<?php echo isset($_SESSION['nombre']) ? $_SESSION['nombre'] : 'Usuario Desconocido'; ?>";
+// Usa la variable global para obtener el nombre de usuario
+let nombreUsuario = nombreUsuarioPHP;
 let diaSemana = new Date().toLocaleDateString('en-US', { weekday: 'long' });
 let fecha = new Date().toLocaleDateString('en-US');
 
@@ -16,8 +13,4 @@ function mensajeBienvenida() {
     }
 }
 
-// Llamar a la función cuando el DOM esté completamente cargado
 document.addEventListener("DOMContentLoaded", mensajeBienvenida);
-
-
-
