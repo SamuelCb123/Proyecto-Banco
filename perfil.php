@@ -35,7 +35,7 @@ session_start();
   </div>
             
   
-        <div class="caja">
+        <div class="cajas">
         
       
         </div>
