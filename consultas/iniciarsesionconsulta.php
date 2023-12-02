@@ -15,7 +15,7 @@ if (!$resultado) {
     if (mysqli_num_rows($resultado) > 0) {
         $_SESSION['nombre'] = $nombre;
         header("location: ../perfil.php");
-        exit(); // Asegura que el script se detenga después de redirigir.
+        exit(); 
     } else {
         echo "Usuario no encontrado";
     }
