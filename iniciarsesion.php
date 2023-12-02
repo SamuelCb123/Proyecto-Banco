@@ -26,7 +26,7 @@
     </div>
     <div class="botones">
     <input class="btn" type="submit" name="enviar" value="Iniciar sesion">
-    <p>¿Aun no tienes cuenta? <a href="registro.php">Regístrate</a></p>
+    <p>¿Aun no tienes cuererenta? <a href="registro.php">Regístrate</a></p>
    
     </div>
     
