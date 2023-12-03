@@ -16,10 +16,9 @@ session_start();
     </script>
 </head>
 <body>
-<header class="menulateral">
-    <div class="left_area">
+
 <p id="mensaje-bienvenida"></p>
-</div>
+
 </header>
 <div class="sidebar">
     <a href="#"></a>
