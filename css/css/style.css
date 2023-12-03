@@ -98,6 +98,10 @@ input {
   background-color: #FFBE58;
 }
 
+.prueba {
+  width: 100px;
+}
+
 body {
   margin: 0;
 }
