@@ -38,14 +38,14 @@ session_start();
                         <label for="nombre">Nombre:</label>
                         <input type="text" id="nombre" name="nombre">
 
-                        <label for="apellido">Apellidos</label>
-                        <input type="text" id="apellido" name="apellido">
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" id="apellidos" name="apellidos">
 
-                        <label for="correo">codigoPostal:</label>
-                        <input type="number" id="codigoPostal" name="codigoPostal">
+                        <label for="codigo">codigopostal:</label>
+                        <input type="number" id="codigopostal" name="codigopostal">
 
                         <label for="telefono">fechadenacimiento</label>
-                        <input type="date" id="fecha" name="fecha">
+                        <input type="date" id="fechadenacimiento" name="fechadenacimiento">
 
                         <label for="direccion">Dirección:</label>
                         <input type="text" id="direccion" name="direccion" >
@@ -54,9 +54,9 @@ session_start();
                         <input type="text" id="ciudad" name="ciudad">
 
                         <label for="pais">País:</label>
-                        <input type="text" id="pais" name="pais">
+                        <input type="text" id="Pais" name="Pais">
 
-                        <label for="codigoPostal">provincia</label>
+                        <label for="provincia">provincia</label>
                         <input type="text" id="provincia" name="provincia">
 
                        
