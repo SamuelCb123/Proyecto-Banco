@@ -15,7 +15,7 @@
             <img src="img/logobancosa.png" alt="" width="110px">
         </a>
         <a href="registro.php" class="button">Registro</a>
-        <a href="iniciarsesion.php" class="button">Iniciar sesrión</a>
+        <a href="iniciarsesion.php" class="button">Iniciar sesión</a>
     </nav>
 </header>
 <div class="formulario">

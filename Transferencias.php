@@ -1,30 +1,19 @@
-
-<?php
-session_start();
-?>
-
-
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil Usuario</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Document</title>
     <link href="SASS/CSS/style.css" rel="stylesheet">
-    <script>
-        let nombreUsuarioPHP = "<?php echo isset($_SESSION['nombre']) ? $_SESSION['nombre'] : 'Usuario Desconocido'; ?>";
-    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-
-
-<p id="mensaje-bienvenida"></p>
-<button id="toggle-btn">&#9776; Menú</button>
-
-
-
 <div class="sidebar">
+        <a href="#">
+            <i class="fa-solid fa-house"><span>Mi cuenta</span></i>
+            <button id="buttonmodal">Editar perfil</button>
+            
+            <div class="sidebar">
         <a href="#">
             <i class="fa-solid fa-house"><span>Mi cuenta</span></i>
             <button id="buttonmodal">Editar perfil</button>
@@ -85,7 +74,10 @@ session_start();
             <i class="fa-solid fa-door-open"><span>Salir</span></i>
         </a>
 </div>
-
-
+ <form method="post" action="" class="ingresar">
+    <label for="ingresardinero">Ingresar dinero</label>
+    <input type="number" id="ingresardinero" name="ingresardinero">
+    <input  type="submit" value="Guardar cambios">
+ </form>
 </body>
 </html>
