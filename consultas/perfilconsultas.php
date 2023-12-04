@@ -10,7 +10,6 @@ $Pais = $_POST['Pais'];
 $provincia = $_POST['provincia'];
 
 
-$consulta = "UPDATE usuarios SET nombre = '$nombre', apellidos= '$apellidos', codigopostal = '$codigopostal', fechadenacimiento ='$fechadenacimiento', direccion = '$direccion', ciudad = '$ciudad', Pais = '$Pais', provincia = '$provincia' WHERE Pais = :'$Pais' ";
+$consulta = "UPDATE usuarios SET nombre = '$nombre', apellidos= '$apellidos', codigopostal = '$codigopostal', fechadenacimiento ='$fechadenacimiento', direccion = '$direccion', ciudad = '$ciudad', Pais = '$Pais', provincia = '$provincia' WHERE Pais = '$Pais'";
 $resultado = mysqli_query($conexion, $consulta);
- mysqli_close($conexion);
-?>
+mysqli_close($conexion);

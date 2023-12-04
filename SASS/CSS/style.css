@@ -1,4 +1,3 @@
-@charset "UTF-8";
 #mensaje-bienvenida {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10,6 +9,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding: 15px;
+  background-color: rgba(0, 17, 255, 0);
 }
 
 .sidebar {
@@ -28,7 +28,7 @@
   padding: 15px;
   text-decoration: none;
   font-size: 18px;
-  color: white;
+  color: rgb(179, 151, 151);
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -48,7 +48,6 @@
   cursor: pointer;
 }
 
-/* Puedes agregar estilos específicos para tu modal aquí */
 #modal {
   display: none;
   position: fixed;
@@ -78,12 +77,10 @@
   font-size: 20px;
 }
 
-/* Ajusta el contenido para dejar espacio para el menú */
 .content {
-  margin-left: 250px; /* Igual al ancho del menú lateral */
+  margin-left: 250px;
 }
 
-/* Estilos para pantallas pequeñas */
 @media screen and (max-width: 768px) {
   .sidebar {
     width: 0;
@@ -177,4 +174,8 @@ input {
 
 .btn {
   background-color: #FFBE58;
+}
+
+.ingresar {
+  color: red;
 }
