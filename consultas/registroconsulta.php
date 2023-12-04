@@ -12,6 +12,9 @@ $consulta = "INSERT INTO usuarios (nombre, apellidos, DNI, email, Pais) VALUES (
 $resultado = mysqli_query($conexion, $consulta);
 
 if ($resultado) {
+    $id_usuario = mysqli_insert_id($conexion);
+    session_start();
+    $_SESSION['id_usuario'] = $id_usuario;
     header("location: ../iniciarsesion.php");
     
 } else {
