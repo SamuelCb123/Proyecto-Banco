@@ -6,6 +6,16 @@ include('conexion.php');
 $nombre = $_POST['nombre'];
 $email = $_POST['email'];
 
+
+
+$consulta2 = "SELECT nombre,email from usuarios where nombre = '$nombre' and correo = '$correo'";
+
+
+
+
+
+
+
 $consulta = "SELECT `nombre`, `email` FROM `usuarios` WHERE `nombre` = '$nombre' AND `email` = '$email'";
 $resultado = mysqli_query($conexion, $consulta);
 

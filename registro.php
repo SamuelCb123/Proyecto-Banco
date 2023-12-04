@@ -42,6 +42,11 @@
             <input type="text" name="Pais" placeholder="pais"required>
             <img class="input-icon" src="persona.png" alt=""width="30px">
         </div>
+        <div class="input-wrapper">
+            <input type="file" name="imagen" placeholder="imagen">
+            <img class="input-icon" src="" alt="" width="">
+                </div>
+
         <input class="btn" type="submit" name="enviar" value="registros">
 </body>
 </html>
