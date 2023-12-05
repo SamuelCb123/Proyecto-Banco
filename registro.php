@@ -19,7 +19,7 @@
     </nav>
 </header>
 <div class="formulario">
-    <form method="post" action="consultas/registroconsulta.php">
+    <form method="post" action="consultas/registroconsulta.php" enctype="multipart/form-data">
         <p>registros</p>
         <div class="input-wrapper">
             <input type="text" name="nombre" placeholder="Nombre">
@@ -43,7 +43,7 @@
             <img class="input-icon" src="persona.png" alt=""width="30px">
         </div>
         <div class="input-wrapper">
-            <input type="file" name="imagen" placeholder="imagen">
+            <input type="file" name="foto" placeholder="foto">
             <img class="input-icon" src="" alt="" width="">
                 </div>
 
