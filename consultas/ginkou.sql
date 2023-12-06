@@ -2,22 +2,28 @@ DROP DATABASE IF EXISTS ginkou;
 CREATE DATABASE ginkou;
 use ginkou;
 
-create table usuarios(
-id_usuario int primary key auto_increment,
-nombre varchar(43),
-apellidos varchar(55),
-DNI VARCHAR(9) ,
-email varchar( 34),
-Pais varchar(34),
-fechadenacimiento datetime,
-direccion varchar(44),
-codigopostal int,
-ciudad varchar(44),
-provincia varchar(44),
-iban int,
-foto varchar(122)
+CREATE TABLE administradores (
+    id_admin INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(43),
+    email VARCHAR(43)
+);
 
-
+CREATE TABLE usuarios (
+    id_usuario INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(43),
+    apellidos VARCHAR(55),
+    DNI VARCHAR(9),
+    email VARCHAR(34),
+    Pais VARCHAR(34),
+    fechadenacimiento DATETIME,
+    direccion VARCHAR(44),
+    codigopostal INT,
+    ciudad VARCHAR(44),
+    provincia VARCHAR(44),
+    iban INT,
+    foto VARCHAR(122),
+    id_admin INT,
+    FOREIGN KEY (id_admin) REFERENCES administradores(id_admin)
 );
 
 create table Finanzas (

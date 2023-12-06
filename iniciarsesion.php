@@ -13,7 +13,7 @@
 
    
 
-<form method="post" action= "consultas/iniciarsesionconsulta.php">
+<form method="post" action= "consultas/consultaniciarsesion.php">
     <p>Iniciar sesion</p>
     <div class="input-wrapper">
         <input type="text" name="nombre" placeholder="Nombre">

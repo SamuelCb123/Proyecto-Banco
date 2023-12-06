@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #ingresos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,4 +9,20 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 133px;
+}
+
+#ingresos label {
+  color: #fff;
+  margin-bottom: 123px;
+}
+
+#ingresardinero {
+  margin-top: -56px;
+}
+
+#ingresos input[type=submit] {
+  background-color: #ff0000; /* Cambia el color a rojo, puedes ajustar el código de color según tus preferencias */
+  color: #fff;
+  margin-top: 64px;
 }
