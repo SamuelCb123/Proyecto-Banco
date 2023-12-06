@@ -1,111 +1,34 @@
-#mensaje-bienvenida {
+@charset "UTF-8";
+.header {
+  background-color: black;
+  height: 80px;
+}
+
+.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 15px;
-  background-color: rgba(0, 17, 255, 0);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.sidebar {
-  width: 250px;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  padding-top: 60px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.sidebar a {
-  padding: 15px;
+.button {
+  background-color: #efe3d0;
+  color: #fff;
+  border-radius: 34px;
+  width: 148px;
+  height: 46px;
+  margin: 5px;
+  margin-bottom: 70px;
   text-decoration: none;
-  font-size: 18px;
-  color: rgb(179, 151, 151);
-  display: block;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  line-height: 46px;
+  text-indent: 30px;
 }
 
-.sidebar a:hover {
-  background-color: #ff9800;
-}
-
-.sidebar button {
-  margin-top: 20px;
-  padding: 10px;
-  background-color: #ff9800;
-  color: #111;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-content {
-  background-color: #fff;
-  margin: 10% auto;
-  padding: 20px;
-  border-radius: 5px;
-  width: 80%;
-  max-width: 400px;
-  max-height: 80vh;
-  overflow-y: auto;
-}
-
-.close {
-  cursor: pointer;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 20px;
-}
-
-.content {
-  margin-left: 250px;
-}
-
-@media screen and (max-width: 768px) {
-  .sidebar {
-    width: 0;
-    overflow-x: hidden;
-  }
-  .sidebar.active {
-    width: 250px;
-  }
-  .sidebar a {
-    display: none;
-  }
-  .sidebar button {
-    display: block;
-    width: 100%;
-    padding: 15px;
-    background-color: #ff9800;
-    color: #111;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .sidebar.active a {
-    display: block;
-  }
-}
 form {
   -webkit-box-shadow: 0 0 20px;
           box-shadow: 0 0 20px;
@@ -176,6 +99,128 @@ input {
   background-color: #FFBE58;
 }
 
-.ingresar {
-  color: red;
+#mensaje-bienvenida {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.left_area h3 {
+  color: #fff;
+  margin: 0;
+}
+
+.left_area span {
+  color: #FFBE58;
+}
+
+.menulateral {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  padding-top: 60px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sidebar a {
+  padding: 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #ff9800;
+}
+
+.sidebar button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ff9800;
+  color: #111;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Puedes agregar estilos específicos para tu modal aquí */
+#modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 400px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+}
+
+#ingresos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 133px;
+}
+
+#ingresos label {
+  color: #fff;
+  margin-bottom: 123px;
+}
+
+#ingresardinero {
+  margin-top: -56px;
+}
+
+#ingresos input[type=submit] {
+  background-color: #ff0000; /* Cambia el color a rojo, puedes ajustar el código de color según tus preferencias */
+  color: #fff;
+  margin-top: 64px;
+}
+
+body {
+  margin: 0;
 }
