@@ -36,9 +36,10 @@ create table Finanzas (
 );
 
 
-
-
-
+INSERT INTO administradores (nombre, email) VALUES
+('admin1', 'admin@gmail.com');
 
 
 select * from usuarios;
+
+select * from administradores;

@@ -10,7 +10,7 @@
 
 <?php
 
- session_start();
+
  
  include('consultas/consultaniciarsesion.php');
  

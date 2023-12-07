@@ -2,9 +2,25 @@
 session_start();
 
 include('conexion.php');
+?>
 
-$nombre = $_POST['nombre'];
-$email = $_POST['email'];
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+<?php
+$nombre = isset($_POST['nombre']) ? $_POST['nombre'] : '';
+$email = isset($_POST['email']) ? $_POST['email'] : '';
 
 $consulta2 = "SELECT * FROM administradores WHERE nombre = '$nombre' AND email = '$email'";
 $resultado = mysqli_query($conexion, $consulta2);
@@ -31,25 +47,26 @@ if (!$resultado) {
         header("location: ../perfil.php");
         exit();
     } else {
-        echo "Usuario no encontrado";
+        
     }
 }
 
-$consulta_usuarios = "SELECT * FROM usuarios";
-$resultado_usuarios = mysqli_query($conexion, $consulta_usuarios);
-if ($resultado_usuarios) {
+$consulta4 = "SELECT * FROM usuarios";
+$resultado = mysqli_query($conexion, $consulta4);
+if ($resultado) {
     echo "<h2>Información de Usuarios</h2>";
-    echo "<table border='1'>";
+    echo "<table border='1'class='tabla'>";
     echo "<tr><th>ID</th><th>Nombre</th><th>Apellidos</th><th>DNI</th><th>Email</th><th>Pais</th></tr>";
 
-    while ($fila = mysqli_fetch_assoc($resultado_usuarios)) {
+    while ($fila = mysqli_fetch_assoc($resultado)) {
         echo "<tr>";
-        echo "<td>" . $fila['id'] . "</td>";
-        echo "<td>" . $fila['nombre'] . "</td>";
-        echo "<td>" . $fila['apellidos'] . "</td>";
-        echo "<td>" . $fila['DNI'] . "</td>";
-        echo "<td>" . $fila['email'] . "</td>";
-        echo "<td>" . $fila['Pais'] . "</td>";
+     
+        echo "<td>" . (isset($fila['id']) ? $fila['id'] : '') . "</td>";
+        echo "<td>" . (isset($fila['nombre']) ? $fila['nombre'] : '') . "</td>";
+        echo "<td>" . (isset($fila['apellidos']) ? $fila['apellidos'] : '') . "</td>";
+        echo "<td>" . (isset($fila['DNI']) ? $fila['DNI'] : '') . "</td>";
+        echo "<td>" . (isset($fila['email']) ? $fila['email'] : '') . "</td>";
+        echo "<td>" . (isset($fila['Pais']) ? $fila['Pais'] : '') . "</td>";
         echo "</tr>";
     }
 
@@ -57,6 +74,4 @@ if ($resultado_usuarios) {
 } else {
     echo "Error en la consulta: " . mysqli_error($conexion);
 }
-
-
 ?>
