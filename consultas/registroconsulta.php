@@ -5,6 +5,8 @@ function validarDNI($DNI){
     return preg_match('/^[0-9]{8}[A-Za-z]$/', $DNI);
 }
 
+session_start(); 
+
 $nombre = $_POST['nombre'];
 $apellidos = $_POST['apellidos'];
 $DNI = $_POST['DNI'];
@@ -29,8 +31,7 @@ $resultadoInsertar = mysqli_query($conexion, $consultaInsertar);
 
 if ($resultadoInsertar) {
     $id_usuario = mysqli_insert_id($conexion);
-    session_start();
-    $_SESSION['id_usuario'] = $id_usuario;
+    $_SESSION['id_usuario'] = $id_usuario; // Definir 'id_usuario' en la sesión
     header("location: ../iniciarsesion.php");
 } else {
     echo "Error en la consulta de inserción: " . mysqli_error($conexion);
@@ -38,3 +39,4 @@ if ($resultadoInsertar) {
 
 mysqli_close($conexion);
 ?>
+
