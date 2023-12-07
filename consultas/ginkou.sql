@@ -26,15 +26,15 @@ CREATE TABLE usuarios (
     FOREIGN KEY (id_admin) REFERENCES administradores(id_admin)
 );
 
-create table Finanzas (
-    id_finanzas int primary key,
-    id_usuario INT,
-    iban varbinary(73),  
-    Saldo decimal(10,2),
-    Prestamos decimal(10,2),
-    foreign key (id_usuario) references usuarios(id)
+CREATE TABLE ingresos_retiros (
+    id_movimiento INT PRIMARY KEY AUTO_INCREMENT,
+       cantidad DECIMAL(10, 2),
+    fecha_movimiento DATETIME,
+      id_usuario INT,
+    id_admin INT,
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario),
+    FOREIGN KEY (id_admin) REFERENCES administradores(id_admin)
 );
-
 
 INSERT INTO administradores (nombre, email) VALUES
 ('admin1', 'admin@gmail.com');

@@ -43,7 +43,8 @@
             <img class="input-icon" src="persona.png" alt=""width="30px">
         </div>
         <div class="input-wrapper">
-            <input type="file" name="foto" placeholder="foto">
+        <label for="fileTest">Selecciona una imagen/archivo:</label>
+        <input id="fileTest" name="fileTest" type="file">
             <img class="input-icon" src="" alt="" width="">
                 </div>
 
