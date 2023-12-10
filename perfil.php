@@ -21,6 +21,8 @@ session_start();
 
 
 <p id="mensaje-bienvenida"></p>
+<?php
+    
 <button id="toggle-btn">&#9776; Menú</button>
 
 

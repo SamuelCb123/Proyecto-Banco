@@ -31,11 +31,19 @@
     </div>
 
     <div class="contenido">
-        <form method="post" action="" class="ingresar" id="ingresos">
-            <label for="ingresardinero">Ingresar dinero</label>
-            <input type="number" id="ingresardinero" name="ingresardinero">
-            <input  type="submit" value="Guardar cambios">
-        </form>
+        <form method="post" action="consultas/ingresar.php" class="ingresar" id="ingresos">
+            
+        <label for="tipodemovimiento">Tipo de Movimiento:</label>
+    <select name="tipodemovimiento" id="tipodemovimiento">
+        <option value="Ingresar">Ingresar</option>
+        <option value="Retirar">Retirar</option>
+    </select>
+    <br>
+    <label for="cantidad">Cantidad:</label>
+    <input type="number" name="cantidad" id="cantidad" required>
+    <br>
+    <input type="submit" value="Enviar">
+</form>
     </div>
 </body>
 </html>

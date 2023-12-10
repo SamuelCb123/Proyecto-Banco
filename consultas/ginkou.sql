@@ -29,7 +29,11 @@ CREATE TABLE usuarios (
 CREATE TABLE ingresos_retiros (
     id_movimiento INT PRIMARY KEY AUTO_INCREMENT,
        cantidad DECIMAL(10, 2),
+       saldo_actual DECIMAL(10, 2),
     fecha_movimiento DATETIME,
+    tipo_movimiento VARCHAR(255),
+    cantidad_retiro DECIMAL(10,2) DEFAULT 0,
+    saldo_retiro decimal(10,2) default 0,
       id_usuario INT,
     id_admin INT,
     FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario),
@@ -40,6 +44,7 @@ INSERT INTO administradores (nombre, email) VALUES
 ('admin1', 'admin@gmail.com');
 
 
+select * from ingresos_retiros;
 select * from usuarios;
 
 select * from administradores;
