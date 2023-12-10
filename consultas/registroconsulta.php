@@ -31,7 +31,7 @@ $resultadoInsertar = mysqli_query($conexion, $consultaInsertar);
 
 if ($resultadoInsertar) {
     $id_usuario = mysqli_insert_id($conexion);
-    $_SESSION['id_usuario'] = $id_usuario; // Definir 'id_usuario' en la sesión
+    $_SESSION['id_usuario'] = $id_usuario; 
     header("location: ../iniciarsesion.php");
 } else {
     echo "Error en la consulta de inserción: " . mysqli_error($conexion);
