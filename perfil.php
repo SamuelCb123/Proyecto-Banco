@@ -22,6 +22,9 @@ session_start();
 
 <p id="mensaje-bienvenida"></p>
 
+
+<?php echo "<p class='dinero'Operación realizada con éxito. ID del Usuario: {$_SESSION['id_usuario']}, Nuevo saldo: {$_SESSION['nuevo_saldo']}</p>";
+?>
     
 
 
