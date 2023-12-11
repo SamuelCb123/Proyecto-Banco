@@ -57,7 +57,7 @@ mysqli_stmt_execute($stmt_transacciones);
 $resultado_transacciones = mysqli_stmt_get_result($stmt_transacciones);
 mysqli_stmt_close($stmt_transacciones);
 
-echo "<table border='1'>
+$tableContent = "<table border='1'>
         <tr>
             <th>Fecha de Movimiento</th>
             <th>Cantidad</th>
@@ -65,16 +65,14 @@ echo "<table border='1'>
         </tr>";
 
 while ($row_transaccion = mysqli_fetch_assoc($resultado_transacciones)) {
-    echo "<tr>
+    $tableContent .= "<tr>
             <td>{$row_transaccion['fecha_movimiento']}</td>
             <td>{$row_transaccion['cantidad']}</td>
             <td>{$row_transaccion['saldo_retiro']}</td>
           </tr>";
 }
 
-echo "</table>";
+$tableContent .= "</table>";
 
-echo "<p>Operación realizada con éxito. ID del Usuario: {$_SESSION['id_usuario']}, Nuevo saldo: $nuevo_saldo</p>";
+$paragraphContent = "<p>Operación realizada con éxito. ID del Usuario: {$_SESSION['id_usuario']}, Nuevo saldo: $nuevo_saldo</p>";
 $_SESSION['nuevo_saldo'] = $nuevo_saldo;
-?>
-
