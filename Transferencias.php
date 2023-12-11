@@ -41,7 +41,7 @@
     <br>
     <select name="tipodemovimiento" id="tipodemonedas">
     <option value="Euro">Euro</option>
-        <option value="Libra">Libra</option>
+        <option value="Libra">Libras</option>
         <option value="Dólar">Dólar</option>
         <option value="Yen">Yen</option>
         <option value="Rublo">Rublo</option>
