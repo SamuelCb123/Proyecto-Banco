@@ -224,6 +224,14 @@ input {
   margin-top: 64px;
 }
 
+.boton1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 123px;
+  background-color: red;
+}
+
 table {
   border-collapse: collapse;
   width: 60%;
