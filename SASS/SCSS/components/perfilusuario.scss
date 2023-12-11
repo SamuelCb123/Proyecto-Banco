@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 
@@ -58,7 +59,7 @@
     cursor: pointer;
 }
 
-/* Puedes agregar estilos específicos para tu modal aquí */
+
 #modal {
     display: none;
     position: fixed;
@@ -86,4 +87,7 @@
     top: 10px;
     right: 10px;
     font-size: 20px;
+}
+.dinero{
+    width: 123px;
 }

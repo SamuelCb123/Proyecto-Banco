@@ -163,7 +163,6 @@ input {
   cursor: pointer;
 }
 
-/* Puedes agregar estilos específicos para tu modal aquí */
 #modal {
   display: none;
   position: fixed;
@@ -191,6 +190,10 @@ input {
   top: 10px;
   right: 10px;
   font-size: 20px;
+}
+
+.dinero {
+  width: 123px;
 }
 
 #ingresos {
