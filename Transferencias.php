@@ -37,13 +37,24 @@
     <select name="tipodemovimiento" id="tipodemovimiento">
         <option value="Ingresar">Ingresar</option>
         <option value="Retirar">Retirar</option>
-    </select>
+</select>
     <br>
+    <select name="tipodemovimiento" id="tipodemonedas">
+    <option value="Euro">Euro</option>
+        <option value="Libra">Libra</option>
+        <option value="Dólar">Dólar</option>
+        <option value="Yen">Yen</option>
+        <option value="Rublo">Rublo</option>
+</select>
+
+ <br>
+
     <label for="cantidad">Cantidad:</label>
     <input type="number" name="cantidad" id="cantidad" required>
     <br>
     <input type="submit" value="Enviar">
 </form>
     </div>
+    
 </body>
 </html>
