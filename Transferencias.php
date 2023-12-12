@@ -47,13 +47,6 @@
 </form>
     </div>
 
-    <div class="botones-container">
-    <button class="boton1">Euro</button>
-    <button class="boton2">Libra</button>
-    <button class="boton3">Dólar</button>
-    <button class="boton4">Yen</button>
-    <button class="boton45">Rublo</button>
-</div>
-
+    
 </body>
 </html>

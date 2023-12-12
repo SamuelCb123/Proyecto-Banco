@@ -1,3 +1,52 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../SASS/CSS/style.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="botones-container">
+    <button class="boton1">Euro</button>
+    <button class="boton2">Libra</button>
+    <button class="boton3">Dólar</button>
+    <button class="boton4">Yen</button>
+    <button class="boton45">Rublo</button>
+</div>
+<script src="../transferencias.js"></script>
+<script>
+"use strict";
+
+function convertCurrency(currency) {
+    const amountInUSD = parseFloat(prompt('Enter the amount in USD:'));
+    
+    if (!isNaN(amountInUSD)) {
+        const convertedAmount = amountInUSD * getExchangeRate(currency);
+        document.getElementById('convertedAmount').innerText = `Converted Amount (${currency}): ${convertedAmount.toFixed(2)}`;
+    } else {
+        alert('Please enter a valid number for the amount.');
+    }
+}
+
+function getExchangeRate(currency) {
+    const exchangeRates = {
+        'Euro': 1.12,
+        'Libra': 1.31,
+        'Dólar': 1.00,
+        'Yen': 0.0091,
+        'Rublo': 0.014
+    };
+
+    return exchangeRates[currency];
+}
+</script>
+</body>
+</html>
+
 <?php
 include('conexion.php');
 include('consultaniciarsesion.php');
@@ -57,7 +106,7 @@ mysqli_stmt_execute($stmt_transacciones);
 $resultado_transacciones = mysqli_stmt_get_result($stmt_transacciones);
 mysqli_stmt_close($stmt_transacciones);
 
-$tableContent = "<table border='1'>
+echo "<table border='1'>
         <tr>
             <th>Fecha de Movimiento</th>
             <th>Cantidad</th>
@@ -65,14 +114,16 @@ $tableContent = "<table border='1'>
         </tr>";
 
 while ($row_transaccion = mysqli_fetch_assoc($resultado_transacciones)) {
-    $tableContent .= "<tr>
+    echo "<tr>
             <td>{$row_transaccion['fecha_movimiento']}</td>
             <td>{$row_transaccion['cantidad']}</td>
             <td>{$row_transaccion['saldo_retiro']}</td>
           </tr>";
 }
 
-$tableContent .= "</table>";
+echo "</table>";
 
-$paragraphContent = "<p>Operación realizada con éxito. ID del Usuario: {$_SESSION['id_usuario']}, Nuevo saldo: $nuevo_saldo</p>";
+echo "<p>Operación realizada con éxito. ID del Usuario: {$_SESSION['id_usuario']}, Nuevo saldo: $nuevo_saldo</p>";
 $_SESSION['nuevo_saldo'] = $nuevo_saldo;
+?>
+
