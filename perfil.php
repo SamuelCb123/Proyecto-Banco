@@ -78,11 +78,38 @@ session_start();
         <i class="fa-solid fa-door-open"><span>Salir</span></i>
     </a>
 </div>
-<script src="perfil.js"></script>
+
+
+<style>
+        .sidebar {
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            display: none;
+        }
+
+        #show-menu-btn,
+        #hide-menu-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+
+        .sidebar.visible {
+            display: block !important;
+        }
+    </style>
+
 <script>
 
 
 
+
+
+        
 
 
 </body>

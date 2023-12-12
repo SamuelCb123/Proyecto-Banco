@@ -27,17 +27,22 @@ function closeModal() {
 document.getElementById("buttonmodal").onclick = openModal;
 
 
-    document.addEventListener('DOMContentLoaded', function () {
-        const showMenuBtn = document.getElementById('show-menu-btn');
-        const hideMenuBtn = document.getElementById('hide-menu-btn');
-        const sidebar = document.querySelector('.sidebar');
 
-        showMenuBtn.addEventListener('click', function () {
-            sidebar.classList.add('visible');
-        });
+document.addEventListener('DOMContentLoaded', function () {
+    const showMenuBtn = document.getElementById('show-menu-btn');
+    const hideMenuBtn = document.getElementById('hide-menu-btn');
+    const sidebar = document.querySelector('.sidebar');
 
-        hideMenuBtn.addEventListener('click', function () {
-            sidebar.classList.remove('visible');
-        });
+    showMenuBtn.addEventListener('click', function () {
+        sidebar.classList.add('visible');
     });
 
+    hideMenuBtn.addEventListener('click', function () {
+        sidebar.classList.remove('visible');
+    });
+
+
+}
+
+
+)
