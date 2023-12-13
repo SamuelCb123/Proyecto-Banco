@@ -3,10 +3,12 @@
     margin-top: 20px; /* Ajusta el margen según tus necesidades */
 }
 
+
 #ingresos label {
     color: #fff;
     margin-bottom: 10px; /* Ajusta el margen inferior según tus necesidades */
 }
+
 
 #ingresos input[type="submit"] {
     background-color: #ff0000;
@@ -14,14 +16,16 @@
     margin-top: 10px; /* Ajusta el margen superior según tus necesidades */
 }
 
+
 .botones-container {
     display: flex;
     justify-content: center;
     align-items: center; /* Alinea los botones a la derecha */
 }
 
+
 .boton1, .boton2, .boton3, .boton4 {
-  
+ 
     background-color: red;
 }
 .boton1{
