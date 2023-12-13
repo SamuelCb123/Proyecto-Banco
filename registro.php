@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link href="SASS/CSS/style.css" rel="stylesheet">
+ 
+    <link href="SASS/CSS/components/header.css" rel="stylesheet">
     <link href="SASS/CSS/components/formulario.css" rel="stylesheet">
 </head>
 

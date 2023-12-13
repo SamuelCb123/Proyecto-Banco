@@ -4,10 +4,14 @@
 }
 
 
+
+
 #ingresos label {
     color: #fff;
     margin-bottom: 10px; /* Ajusta el margen inferior según tus necesidades */
 }
+
+
 
 
 #ingresos input[type="submit"] {
@@ -17,11 +21,15 @@
 }
 
 
+
+
 .botones-container {
     display: flex;
     justify-content: center;
-    align-items: center; /* Alinea los botones a la derecha */
+    align-items: center; 
 }
+
+
 
 
 .boton1, .boton2, .boton3, .boton4 {

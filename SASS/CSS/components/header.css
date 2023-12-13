@@ -1,0 +1,32 @@
+.header {
+  background-color: black;
+  height: 80px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button {
+  background-color: #FFBE58;
+  color: #fff;
+  border-radius: 34px;
+  width: 148px;
+  height: 46px;
+  margin: 5px;
+  margin-bottom: 70px;
+  text-decoration: none;
+  line-height: 46px;
+  text-indent: 30px;
+}
+body{
+  margin: 0;
+}

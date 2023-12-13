@@ -1,5 +1,6 @@
-@import "components/header.scss";
+@import "components/header";
 @import "components/formulario.scss";
-@import "components/perfilusuario.scss";
-@import "components/admin.scss";
-@import "components/Transferencias.scss";
+@import "components/perfil.scss";
+body{
+    margin: 0;
+}

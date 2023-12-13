@@ -5,13 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar sesion</title>
     <link href="SASS/CSS/components/formulario.css" rel="stylesheet">
+    <link href="SASS/CSS/components/header.css" rel="stylesheet">
+
 </head>
 <body>
+<header class="header">
+    <nav class="nav">
+        <a href="#" class="logo">
+            <img src="img/logobancosa.png" alt="" width="110px">
+        </a>
+        <a href="registro.php" class="button">Registro</a>
+        <a href="iniciarsesion.php" class="button">Iniciar sesión</a>
+    </nav>
+</header>
+<div id='banner'>
+<img src="img/ginkou.png">
+</div>
 <div class="formulario">
-
-
-
-   
 
 <form method="post" action= "consultas/consultaniciarsesion.php">
     <p>Iniciar sesion</p>

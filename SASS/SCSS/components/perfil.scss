@@ -3,11 +3,12 @@
     height: 100%;
     position: fixed;
     top: 0;
-    left: 0; 
+    left: 0;
     background-color: #111;
     padding-top: 60px;
     transition: 0.5s;
 }
+
 
 .sidebar a {
     padding: 15px;
@@ -18,9 +19,11 @@
     transition: 0.3s;
 }
 
+
 .sidebar a:hover {
     background-color: #ff9800;
 }
+
 
 .sidebar button {
     margin-top: 20px;
@@ -31,6 +34,7 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
 
 /* Puedes agregar estilos específicos para tu modal aquí */
 #modal {
@@ -43,6 +47,7 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+
 .modal-content {
     background-color: #fff;
     margin: 10% auto;
@@ -53,6 +58,7 @@
     max-height: 80vh;
     overflow-y: auto;
 }
+
 
 .close {
     cursor: pointer;
@@ -68,6 +74,7 @@
     display: none;
 }
 
+
 #show-menu-btn,
 #hide-menu-btn {
     background-color: #007bff;
@@ -77,6 +84,7 @@
     cursor: pointer;
     margin-bottom: 5px;
 }
+
 
 .sidebar.visible {
     display: block !important;
