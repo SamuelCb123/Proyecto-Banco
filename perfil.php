@@ -11,6 +11,7 @@ session_start();
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="SASS/CSS/components/perfilusuario.css" rel="stylesheet">
     <link href="SASS/CSS/style.css" rel="stylesheet">
+    <link href="SASS/CSS/components/formulario.css" rel="stylesheet">
     <script>
         let nombreUsuarioPHP = "<?php echo isset($_SESSION['nombre']) ? $_SESSION['nombre'] : 'Usuario Desconocido'; ?>";
     </script>
@@ -81,26 +82,7 @@ session_start();
 
 
 <style>
-        .sidebar {
-            width: 200px;
-            display: flex;
-            flex-direction: column;
-            display: none;
-        }
-
-        #show-menu-btn,
-        #hide-menu-btn {
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            margin-bottom: 5px;
-        }
-
-        .sidebar.visible {
-            display: block !important;
-        }
+        
     </style>
 
 <script>

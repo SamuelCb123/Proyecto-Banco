@@ -17,7 +17,7 @@
 }
 
 .button {
-  background-color: #efe3d0;
+  background-color: #FFBE58;
   color: #fff;
   border-radius: 34px;
   width: 148px;
@@ -27,6 +27,11 @@
   text-decoration: none;
   line-height: 46px;
   text-indent: 30px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 form {
@@ -99,34 +104,6 @@ input {
   background-color: #FFBE58;
 }
 
-#mensaje-bienvenida {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.left_area h3 {
-  color: #fff;
-  margin: 0;
-}
-
-.left_area span {
-  color: #FFBE58;
-}
-
-.menulateral {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 15px;
-}
-
 .sidebar {
   width: 250px;
   height: 100%;
@@ -163,6 +140,7 @@ input {
   cursor: pointer;
 }
 
+/* Puedes agregar estilos específicos para tu modal aquí */
 #modal {
   display: none;
   position: fixed;
@@ -192,44 +170,42 @@ input {
   font-size: 20px;
 }
 
-.dinero {
-  width: 123px;
-}
-
-#ingresos {
+.sidebar {
+  width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+}
+
+#show-menu-btn,
+#hide-menu-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.sidebar.visible {
+  display: block !important;
+}
+
+#mensaje-bienvenida {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 133px;
-}
-
-#ingresos label {
-  color: #fff;
-  margin-bottom: 123px;
-}
-
-#ingresardinero {
-  margin-top: -56px;
-}
-
-#ingresos input[type=submit] {
-  background-color: #ff0000; /* Cambia el color a rojo, puedes ajustar el código de color según tus preferencias */
-  color: #fff;
-  margin-top: 64px;
-}
-
-.boton1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 123px;
-  background-color: red;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 table {
@@ -253,6 +229,38 @@ td {
   background-color: #FFBE58;
 }
 
-body {
-  margin: 0;
+#ingresos {
+  text-align: center; /* Centra los elementos dentro del formulario */
+  margin-top: 20px; /* Ajusta el margen según tus necesidades */
+}
+
+#ingresos label {
+  color: #fff;
+  margin-bottom: 10px; /* Ajusta el margen inferior según tus necesidades */
+}
+
+#ingresos input[type=submit] {
+  background-color: #ff0000;
+  color: #fff;
+  margin-top: 10px; /* Ajusta el margen superior según tus necesidades */
+}
+
+.botones-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; /* Alinea los botones a la derecha */
+}
+
+.boton1, .boton2, .boton3, .boton4 {
+  background-color: red;
+}
+
+.boton1 {
+  margin-top: -5px;
 }

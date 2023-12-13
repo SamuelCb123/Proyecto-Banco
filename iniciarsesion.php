@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar sesion</title>
-    <link href="SASS/CSS/style.css" rel="stylesheet">
+    <link href="SASS/CSS/components/formulario.css" rel="stylesheet">
 </head>
 <body>
 <div class="formulario">
