@@ -1,19 +1,20 @@
  "use strict";
+"use strict";
+
 let nombreUsuario = nombreUsuarioPHP;
-let diaSemana = new Date().toLocaleDateString('en-US', { weekday: 'long' });
-let fecha = new Date().toLocaleDateString('en-US');
+let diaSemana = new Date().toLocaleDateString('es-ES', { weekday: 'long' });
+let fecha = new Date().toLocaleDateString('es-ES');
 
 function mensajeBienvenida() {
     let mensajeUsuario = document.getElementById("mensaje-bienvenida");
 
     if (mensajeUsuario) {
-        mensajeUsuario.innerHTML = "Hola " + nombreUsuario.toUpperCase() + ", hoy es " + diaSemana + " " + fecha + ".<br>Bienvenido, " + nombreUsuario + "!<br>Fecha de inicio de sesión: " + new Date().toLocaleString();
-    } else {
-        alert("Hola " + nombreUsuario.toUpperCase() + ", hoy es " + diaSemana + " " + fecha + ".\nBienvenido, " + nombreUsuario + "!\nFecha de inicio de sesión: " + new Date().toLocaleString());
-    }
+        mensajeUsuario.innerHTML = "Hola " + nombreUsuario.toUpperCase() + ", hoy es " + diaSemana + " " + fecha + ".<br>Bienvenido, " + nombreUsuario + "!<br>Fecha de inicio de sesión: " + new Date().toLocaleString('es-ES');
+    } 
 }
 
-document.addEventListener("DOMContentLoaded", mensajeBienvenida);
+mensajeBienvenida();
+
 
 
 function openModal() {

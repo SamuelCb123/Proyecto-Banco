@@ -9,6 +9,27 @@
 </head>
 
 <body>
+<button id="show-menu-btn">&#9776; Mostrar Menú</button>
+
+<div class="sidebar">
+    <a href="#">
+        <i class="fa-solid fa-house"><span>Mi cuenta</span></i>
+        <button id="buttonmodal">Editar perfil</button>
+        <button id="hide-menu-btn">&#10005; Ocultar Menú</button>
+
+        <div id="modal" class="modal_container">
+            <div class="modal-content">
+                <script src="perfil2.js"></script>
+                <h2>Editar perfil</h2>
+
+              
+
+                <div id="close" class="close" onclick="closeModal()">&times;</div>
+            </div>
+        </div>
+    </a>
+    <div class="caja"></div>
+</div>
 
 <?php
  include('consultas/consultaniciarsesion.php');

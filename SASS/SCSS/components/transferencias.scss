@@ -1,23 +1,26 @@
+
+@import "components/variables.scss";
+
 #ingresos {
-    text-align: center; /* Centra los elementos dentro del formulario */
-    margin-top: 20px; /* Ajusta el margen según tus necesidades */
+    text-align: center; 
+    margin-top: 20px; 
 }
 
 
 
 
 #ingresos label {
-    color: #fff;
-    margin-bottom: 10px; /* Ajusta el margen inferior según tus necesidades */
+    color: $colorletraboton;
+    margin-bottom: 10px; 
 }
 
 
 
 
 #ingresos input[type="submit"] {
-    background-color: #ff0000;
-    color: #fff;
-    margin-top: 10px; /* Ajusta el margen superior según tus necesidades */
+    background-color: $colorbotones;
+    color: $colorletraboton;
+    margin-top: 10px; 
 }
 
 
@@ -34,7 +37,15 @@
 
 .boton1, .boton2, .boton3, .boton4 {
  
-    background-color: red;
+    background-color: $colorbotones;
+    border-radius: 34px;
+    width: 148px;
+    height: 46px;
+    margin: 5px;
+    margin-bottom: 70px;
+    text-decoration: none;
+    line-height: 46px;
+    text-indent: 30px;
 }
 .boton1{
     margin-top: -5px;

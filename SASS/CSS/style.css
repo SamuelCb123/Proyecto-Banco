@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .header {
-  background-color: black;
+  background-color: #111;
   height: 80px;
 }
 
@@ -45,7 +45,7 @@ form {
   width: 90%;
   max-width: 400px;
   margin: auto;
-  background-color: black;
+  background-color: #111;
 }
 
 form p {
@@ -96,7 +96,72 @@ input {
 }
 
 .btn {
+  background-color: #fff;
+}
+
+table {
+  border-collapse: collapse;
+  width: 60%;
+  margin: auto;
+}
+
+th, td {
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 8px;
+}
+
+th {
+  background-color: #111;
+  color: #fff;
+}
+
+td {
   background-color: #FFBE58;
+}
+
+#ingresos {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#ingresos label {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+#ingresos input[type=submit] {
+  background-color: #FFBE58;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.botones-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.boton1, .boton2, .boton3, .boton4 {
+  background-color: #FFBE58;
+  border-radius: 34px;
+  width: 148px;
+  height: 46px;
+  margin: 5px;
+  margin-bottom: 70px;
+  text-decoration: none;
+  line-height: 46px;
+  text-indent: 30px;
+}
+
+.boton1 {
+  margin-top: -5px;
 }
 
 .sidebar {

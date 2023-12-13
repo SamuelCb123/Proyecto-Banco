@@ -9,43 +9,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <div class="sidebar">
-        <a href="#">
-            <i class="fa-solid fa-house"><span>Mi cuenta</span></i>
-        </a>
+
+<button id="show-menu-btn">&#9776; Mostrar Menú</button>
+
+<div class="sidebar">
+    <a href="#">
+        <i class="fa-solid fa-house"><span>Mi cuenta</span></i>
         <button id="buttonmodal">Editar perfil</button>
-        <div class="caja"></div>
-        <a href="Transferencias.php">
-            <i class="fa-solid fa-money-bill"><span>Transferencias</span></i>
-        </a>
-        <a href="#">
-            <i class="fa-solid fa-building-columns"><span>Prestamo</span></i>
-        </a>
-        <a href="#">
-            <i class="fa-regular fa-message"><span>Mensajes</span></i>
-        </a>
-        <a href="iniciarsesion.php">
-            <i class="fa-solid fa-door-open"><span>Salir</span></i>
-        </a>
-    </div>
+        <button id="hide-menu-btn">&#10005; Ocultar Menú</button>
 
-    <div class="contenido">
-        <form method="post" action="consultas/ingresar.php" class="ingresar" id="ingresos">
-            
+        <div id="modal" class="modal_container">
+            <div class="modal-content">
+                <script src="perfil2.js"></script>
+                <h2>Editar perfil</h2>
+
+              
+
+                <div id="close" class="close" onclick="closeModal()">&times;</div>
+            </div>
+        </div>
+    </a>
+    <div class="caja"></div>
+</div>
+
+<div class="contenido">
+    <form method="post" action="consultas/ingresar.php" class="ingresar" id="ingresos">
         <label for="tipodemovimiento">Tipo de Movimiento:</label>
-    <select name="tipodemovimiento" id="tipodemovimiento">
-        <option value="Ingresar">Ingresar</option>
-        <option value="Retirar">Retirar</option>
-    </select>
-    
-    <br>
-    <label for="cantidad">Cantidad:</label>
-    <input type="number" name="cantidad" id="cantidad" required>
-    <br>
-    <input type="submit" value="Enviar">
-</form>
-    </div>
+        <select name="tipodemovimiento" id="tipodemovimiento">
+            <option value="Ingresar">Ingresar</option>
+            <option value="Retirar">Retirar</option>
+        </select>
+        <br>
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" name="cantidad" id="cantidad" required>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</div>
 
-    
 </body>
 </html>

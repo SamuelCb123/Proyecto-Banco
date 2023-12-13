@@ -1,4 +1,4 @@
-
+@import "components/variables.scss";
 form {
     box-shadow: 0 0 20px;
     padding: 5%;
@@ -9,12 +9,12 @@ form {
     width: 90%;
     max-width: 400px;
     margin: auto;
-    background-color: black;
+    background-color: $colorformulario;
 }
 
 form p {
     font-size: 18px;
-    color: #fff;
+    color: $colorletraboton;
     margin-bottom: 3vh;
 }
 
@@ -54,6 +54,6 @@ input {
 }
 
 .btn {
-    background-color: #FFBE58;
+    background-color: $colorletraboton;
 
 }

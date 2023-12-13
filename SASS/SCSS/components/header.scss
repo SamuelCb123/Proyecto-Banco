@@ -1,5 +1,7 @@
+@import "components/variables.scss";
+
 .header {
-    background-color: black;
+    background-color: $colorformulario;
     height: 80px;
 }
 
@@ -11,8 +13,8 @@
 }
 
 .button{
-    background-color: #FFBE58;
-    color: #fff;
+    background-color: $colorbotones;
+    color: $colorletraboton;
     border-radius: 34px;
     width: 148px;
     height: 46px;
