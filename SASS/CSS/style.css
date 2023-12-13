@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .header {
-  background-color: #111;
+  background-color: black;
   height: 80px;
 }
 
@@ -45,7 +45,7 @@ form {
   width: 90%;
   max-width: 400px;
   margin: auto;
-  background-color: #111;
+  background-color: black;
 }
 
 form p {
@@ -96,7 +96,7 @@ input {
 }
 
 .btn {
-  background-color: #fff;
+  background-color: #FFBE58;
 }
 
 table {
@@ -106,13 +106,13 @@ table {
 }
 
 th, td {
-  border: 1px solid #fff;
+  border: 1px solid #dddddd;
   text-align: center;
   padding: 8px;
 }
 
 th {
-  background-color: #111;
+  background-color: rgb(0, 0, 0);
   color: #fff;
 }
 
@@ -121,19 +121,19 @@ td {
 }
 
 #ingresos {
-  text-align: center;
-  margin-top: 20px;
+  text-align: center; /* Centra los elementos dentro del formulario */
+  margin-top: 20px; /* Ajusta el margen según tus necesidades */
 }
 
 #ingresos label {
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Ajusta el margen inferior según tus necesidades */
 }
 
 #ingresos input[type=submit] {
-  background-color: #FFBE58;
+  background-color: #ff0000;
   color: #fff;
-  margin-top: 10px;
+  margin-top: 10px; /* Ajusta el margen superior según tus necesidades */
 }
 
 .botones-container {
@@ -149,15 +149,7 @@ td {
 }
 
 .boton1, .boton2, .boton3, .boton4 {
-  background-color: #FFBE58;
-  border-radius: 34px;
-  width: 148px;
-  height: 46px;
-  margin: 5px;
-  margin-bottom: 70px;
-  text-decoration: none;
-  line-height: 46px;
-  text-indent: 30px;
+  background-color: red;
 }
 
 .boton1 {
@@ -180,20 +172,20 @@ td {
   padding: 15px;
   text-decoration: none;
   font-size: 18px;
-  color: #fff;
+  color: white;
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .sidebar a:hover {
-  background-color: #FFBE58;
+  background-color: #ff9800;
 }
 
 .sidebar button {
   margin-top: 20px;
   padding: 10px;
-  background-color: #FFBE58;
+  background-color: #ff9800;
   color: #111;
   border: none;
   border-radius: 5px;
@@ -244,7 +236,7 @@ td {
 
 #show-menu-btn,
 #hide-menu-btn {
-  background-color: #FFBE58;
+  background-color: #007bff;
   color: #fff;
   border: none;
   padding: 10px;
@@ -267,6 +259,7 @@ td {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
 
 body {
   margin: 0;
