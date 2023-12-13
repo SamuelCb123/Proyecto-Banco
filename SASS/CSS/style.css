@@ -197,6 +197,22 @@ input {
 }
 
 #ingresos {
+  text-align: center; /* Centra los elementos dentro del formulario */
+  margin-top: 20px; /* Ajusta el margen según tus necesidades */
+}
+
+#ingresos label {
+  color: #fff;
+  margin-bottom: 10px; /* Ajusta el margen inferior según tus necesidades */
+}
+
+#ingresos input[type=submit] {
+  background-color: #ff0000;
+  color: #fff;
+  margin-top: 10px; /* Ajusta el margen superior según tus necesidades */
+}
+
+.botones-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,31 +221,15 @@ input {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  margin-top: 133px;
+          align-items: center; /* Alinea los botones a la derecha */
 }
 
-#ingresos label {
-  color: #fff;
-  margin-bottom: 123px;
-}
-
-#ingresardinero {
-  margin-top: -56px;
-}
-
-#ingresos input[type=submit] {
-  background-color: #ff0000; /* Cambia el color a rojo, puedes ajustar el código de color según tus preferencias */
-  color: #fff;
-  margin-top: 64px;
+.boton1, .boton2, .boton3, .boton4 {
+  background-color: red;
 }
 
 .boton1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 123px;
-  background-color: red;
+  margin-top: -5px;
 }
 
 table {
