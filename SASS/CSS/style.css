@@ -99,6 +99,10 @@ input {
   background-color: #FFBE58;
 }
 
+body {
+  background-color: red;
+}
+
 #mensaje-bienvenida {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -196,6 +200,36 @@ input {
   width: 123px;
 }
 
+.sidebar {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+}
+
+#show-menu-btn,
+#hide-menu-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.sidebar.visible {
+  display: block !important;
+}
+
+body {
+  background-color: #007bff;
+}
+
 #ingresos {
   text-align: center; /* Centra los elementos dentro del formulario */
   margin-top: 20px; /* Ajusta el margen según tus necesidades */
@@ -251,8 +285,4 @@ th {
 
 td {
   background-color: #FFBE58;
-}
-
-body {
-  margin: 0;
 }

@@ -16,8 +16,16 @@ session_start();
     </script>
 </head>
 <body>
+<?php
+$iban = isset($_SESSION['iban']) ? $_SESSION['iban'] : '';
+?>
+
 
 <p id="mensaje-bienvenida"></p>
+
+
+
+
 <button id="show-menu-btn">&#9776; Mostrar Menú</button>
 
 <div class="sidebar">

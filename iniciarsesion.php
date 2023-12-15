@@ -7,6 +7,20 @@
     <link href="SASS/CSS/style.css" rel="stylesheet">
 </head>
 <body>
+<header class="header">
+    <nav class="nav">
+        <a href="#" class="logo">
+            <img src="img/logobancosa.png" alt="" width="110px">
+        </a>
+        <a href="registro.php" class="button">Registro</a>
+        <a href="iniciarsesion.php" class="button">Iniciar sesión</a>
+    </nav>
+</header>
+
+<div class="banner">
+    <img src="img/ginkou.png" width="100%">
+
+</div>
 <div class="formulario">
 
 

@@ -40,6 +40,26 @@ CREATE TABLE ingresos_retiros (
     FOREIGN KEY (id_admin) REFERENCES administradores(id_admin)
 );
 
+
+CREATE TABLE PRESTAMOS(
+     id_prestamo INT PRIMARY KEY AUTO_INCREMENT,
+    id_usuario INT,
+    monto_prestamo DECIMAL(10, 2),
+    motivo VARCHAR(255),
+    estado VARCHAR(20) DEFAULT 'PENDIENTE',
+    fecha_solicitud DATETIME,
+    fecha_vencimiento DATETIME
+    
+    );
+INSERT INTO administradores (nombre, email) VALUES
+('admin1', 'admin@gmail.com');
+
+
+select * from ingresos_retiros;
+select * from usuarios;
+
+select * from administradores;
+
 INSERT INTO administradores (nombre, email) VALUES
 ('admin1', 'admin@gmail.com');
 

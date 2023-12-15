@@ -6,6 +6,20 @@ include('conexion.php');
 $nombre = isset($_POST['nombre']) ? $_POST['nombre'] : '';
 $email = isset($_POST['email']) ? $_POST['email'] : '';
 
+function obtencionIBAN($nombre) {
+    $nombre = strtolower($nombre);
+    $iban = '';
+
+    for ($i = 0; $i < min(strlen($nombre), 4); $i++) {
+        $posicionAlfabeto = ord($nombre[$i]) - ord('a') + 1;
+        $iban .= $posicionAlfabeto;
+    }
+
+    $ibanBinario = decbin((int)$iban);
+
+    return $ibanBinario;
+}
+
 $consulta2 = "SELECT * FROM administradores WHERE nombre = '$nombre' AND email = '$email'";
 $resultadoAdmin = mysqli_query($conexion, $consulta2);
 
@@ -32,7 +46,8 @@ if (!$resultadoUsuario) {
         $_SESSION['id_usuario'] = $usuario['id_usuario']; 
         $_SESSION['nombre'] = $nombre;
 
-      
+        $iban = obtencionIBAN($nombre);
+        $_SESSION['iban'] = $iban;
         header("location: ../perfil.php");
         exit();
     } else {

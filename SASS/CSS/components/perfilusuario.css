@@ -1,4 +1,3 @@
-@charset "UTF-8";
 #mensaje-bienvenida {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,7 +62,6 @@
   cursor: pointer;
 }
 
-/* Puedes agregar estilos específicos para tu modal aquí */
 #modal {
   display: none;
   position: fixed;
@@ -91,4 +89,34 @@
   top: 10px;
   right: 10px;
   font-size: 20px;
+}
+
+.dinero {
+  width: 123px;
+}
+
+.sidebar {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+}
+
+#show-menu-btn,
+#hide-menu-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.sidebar.visible {
+  display: block !important;
 }

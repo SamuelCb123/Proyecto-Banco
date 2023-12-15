@@ -1,7 +1,7 @@
  "use strict";
 let nombreUsuario = nombreUsuarioPHP;
-let diaSemana = new Date().toLocaleDateString('en-US', { weekday: 'long' });
-let fecha = new Date().toLocaleDateString('en-US');
+let diaSemana = new Date().toLocaleDateString('en-ES', { weekday: 'long' });
+let fecha = new Date().toLocaleDateString('en-ES');
 
 function mensajeBienvenida() {
     let mensajeUsuario = document.getElementById("mensaje-bienvenida");
